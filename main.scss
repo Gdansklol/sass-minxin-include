@@ -1,0 +1,9 @@
+@mixin test {
+    width: 100px;
+    height: 100px;
+    border: 2px solid blueviolet;
+}
+
+div {
+    @include test();
+}
