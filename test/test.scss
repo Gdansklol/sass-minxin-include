@@ -1,0 +1,68 @@
+// import google font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* reset styles */
+
+* {
+    color:inherit;
+    margin: 0;
+}
+
+// body {
+//     font-family: Poppins;
+//     background-color: rgb(116, 104, 194);
+// }
+
+// h1 a {
+//     color:rgb(212, 211, 237);
+// }
+
+// variables , theme colors
+$primary: #326dee;
+$secondary: #1ac888;
+$error: #d32752;
+$info: #f6c31c;
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius:20px;
+
+h1 {
+    color:$primary;
+    margin-bottom: $base-margin;
+}
+a{
+    color: $secondary;
+}
+
+button {
+    color:white;
+    border:0;
+    background: $primary;
+    border-radius: $base-border-radius;
+    padding: $base-padding;
+}
+
+.error {
+    color:$error;
+    border-color: $error;
+    border-style:  solid;
+    margin: $base-margin;
+    padding: $base-padding;
+    border-radius: $base-border-radius;
+    border-width: $base-border-thickness;
+}
+
+.notification {
+    color:$secondary;
+    border-color: $secondary;
+    border-style: solid;
+    margin: $base-margin;
+    padding: $base-padding;
+    border-radius: $base-border-radius;
+    border-width: $base-border-thickness;
+}
