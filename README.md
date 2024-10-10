@@ -34,7 +34,7 @@ link :(https://www.youtube.com/watch?v=Sk5jMurFHCo&list=PL4cUxeGkcC9jxJX7vojNVK-
 File Paths: Make sure the SCSS file path is correct. For example, if you're running this command:
 
 bash
-Copy code
+
 sass ./css/test.scss ./css/test.css
 Verify that the file test.scss exists in the css folder and the output path is also correct.
 
@@ -45,7 +45,7 @@ Syntax Issues: Double-check your SCSS for syntax errors. In your provided code, 
 Google Fonts Import: Your import for Google Fonts is correct:
 
 scss
-Copy code
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 However, check that you have network access for the font to be loaded correctly. Fonts may not impact SCSS compilation, but make sure it's not blocked.
 
@@ -56,13 +56,18 @@ Copy code
 sass --version
 If this fails, you may need to install it:
 
-bash
-Copy code
+
+```bash
 npm install -g sass
+```
+
 SCSS Watch Command: Use the watch command to continuously compile SCSS to CSS:
 
-bash
-Copy code
+- bash
+```bash
 sass --watch ./css/test.scss ./css/test.css
+```
+
 This will automatically compile whenever changes are detected.
 
+sass --watch ./css/dela.scss ./css/dela.css
